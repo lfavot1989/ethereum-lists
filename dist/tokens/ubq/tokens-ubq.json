@@ -12,6 +12,7 @@
     "social": {
       "blog": "",
       "chat": "",
+      "discord": "",
       "facebook": "",
       "forum": "",
       "github": "",
@@ -38,6 +39,7 @@
     "social": {
       "blog": "",
       "chat": "",
+      "discord": "",
       "facebook": "",
       "forum": "",
       "github": "",
@@ -64,6 +66,7 @@
     "social": {
       "blog": "",
       "chat": "",
+      "discord": "",
       "facebook": "",
       "forum": "",
       "github": "",
@@ -75,6 +78,38 @@
       "telegram": "",
       "twitter": "",
       "youtube": ""
+    }
+  },
+  {
+    "symbol": "GEO",
+    "name": "GeoCoin",
+    "type": "ERC20",
+    "address": "0x500684CE0D4f04aBeDff3e54fCF8acC5E6CFc4bD",
+    "ens_address": "",
+    "decimals": 8,
+    "website": "http://geo.money/",
+    "logo": {
+      "src": "http://geo.money/images/stories/geocoin-icon.png",
+      "width": "650px",
+      "height": "650px",
+      "ipfs_hash": ""
+    },
+    "support": { "email": "", "url": "https://discordapp.com/invite/XaqzJB4" },
+    "social": {
+      "blog": "",
+      "chat": "",
+      "discord": "https://discordapp.com/invite/XaqzJB4",
+      "facebook": "https://www.facebook.com/geocoin.cash/",
+      "forum": "https://bitcointalk.org/index.php?topic=923995.0",
+      "github": "",
+      "gitter": "",
+      "instagram": "",
+      "linkedin": "",
+      "reddit": "https://www.reddit.com/r/Ubiq/",
+      "slack": "",
+      "telegram": "",
+      "twitter": "https://twitter.com/geo_coin",
+      "youtube": "https://www.youtube.com/channel/UCERFXiLn0uClFHO9QV0gA2w"
     }
   },
   {
@@ -90,6 +125,7 @@
     "social": {
       "blog": "",
       "chat": "",
+      "discord": "",
       "facebook": "",
       "forum": "",
       "github": "",
@@ -116,6 +152,7 @@
     "social": {
       "blog": "",
       "chat": "",
+      "discord": "",
       "facebook": "",
       "forum": "",
       "github": "",

@@ -133,7 +133,7 @@ ABIs associated with contract addresses.
 - `comment`: Any notes or comment about the contract
 - `abi`: The contract abi
 
-Please make sure that you name the files by its address. You can see examples [here](https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/contracts): https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens
+Please make sure that you name the files by their address. You can see examples [here](https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/contracts): https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens
 
 ## Tokens
 
@@ -147,14 +147,32 @@ Information related to tokens. ERC-20 compliant only (For now).
 - `decimal`: The decimals of the token.
 - `logo`: An optional logo of your token. Must be a **square** (recommended: 128x128) PNG w/ transparent background. Please compress using https://tinypng.com/
 - `support`: A support email, support URL, or other way people can get assistance regarding the token.
-- `social`: Where details about the token is
+- `social`: Where details about the token are.
 
-Please make sure that you name the files by its address. You can see examples [here](https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens): https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens
+Please make sure that you name the files by their address. You can see examples [here](https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens): https://github.com/MyEtherWallet/ethereum-lists/tree/master/src/tokens
 
 #### Development
 
 on terminal, run: `git clone git@github.com:MyEtherWallet/ethereum-lists.git; cd ethereum-lists`  
 and then run: `npm run compile; npm run test:checkToken; npm run test:checkContract; npm run lint` to compile
+
+#### Importing new Icons
+
+1.  unzip icons into root
+2.  `renameIcons.js` - set var icons to path of extracted folder
+3.  `node renameIcons`
+4.  move files into src/icons
+5.  `node generateMissingTokenListFromIcons`
+6.  `node createTokens`
+7.  delete files/folders
+    - maticTokens.json
+    - bscTokens.json
+    - ethTokens.json
+    - notinlist.json
+    - extracted folder from step 1
+8.  `npm run test`
+9.  `npm run compile`
+10. `npm run lint`
 
 #### A last note
 

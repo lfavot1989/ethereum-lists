@@ -18,7 +18,7 @@ function createContractFiles() {
       const obj = JSON.parse(
         fs.readFileSync(`${contractsDirectory}/${folder}/${file}`, 'utf8')
       );
-      obj.address = utils.toChecksumAddress(obj.address)
+      obj.address = utils.toChecksumAddress(obj.address);
       contractArray.push(obj);
     });
     const writeArray = contractArray.sort(function(a, b) {
@@ -51,8 +51,7 @@ function createTokenFiles() {
       const obj = JSON.parse(
         fs.readFileSync(`${tokensDirectory}/${folder}/${file}`, 'utf8')
       );
-
-      obj.address = utils.toChecksumAddress(obj.address)
+      obj.address = utils.toChecksumAddress(obj.address);
       tokenArr.push(obj);
     });
     const writeArray = tokenArr.sort(function(a, b) {
@@ -84,7 +83,7 @@ function createNftFiles() {
       const obj = JSON.parse(
         fs.readFileSync(`${nftsDirectory}/${folder}/${file}`, 'utf8')
       );
-      obj.address = utils.toChecksumAddress(obj.contractAddress)
+      obj.address = utils.toChecksumAddress(obj.contractAddress);
       nftArr.push(obj);
     });
     const writeArray = nftArr.sort(function(a, b) {
